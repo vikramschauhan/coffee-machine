@@ -1,0 +1,12 @@
+select * from Employee;
+
+CREATE TABLE IF NOT EXISTS EMPLOYEE(
+ID INTEGER PRIMARY KEY,
+NAME VARCHAR(50) 
+)
+
+-- drop table employee;
+INSERT into EMPLOYEE (ID, NAME) VALUES (1, 'Vikram');
+INSERT into EMPLOYEE (ID, NAME) VALUES (2, 'Alish');
+INSERT into EMPLOYEE (ID, NAME) VALUES (3, 'Abhay');
+INSERT into EMPLOYEE (ID, NAME) VALUES (4, 'Deep');
