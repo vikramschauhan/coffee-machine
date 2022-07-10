@@ -41,6 +41,6 @@ func BuildConfig() *AppConfig {
 	config.HTTPServer.ReadTimeout = fs.Duration("readTimeout", 60*time.Second, "Read Timeout")
 	config.HTTPServer.IdleTimeout = fs.Duration("idleTimeout", 60*time.Second, "Idle Timeout")
 	config.HTTPServer.GracefulWaitTimeout = fs.Duration("gracefulWaitTimeout", 15*time.Second, "Graceful Wait Timeout")
-	config.HTTPServer.MaxRequestSize = fs.Int64("maxRequestSize", 10485760, "Max Request Size")
+	config.HTTPServer.MaxRequestSize = fs.Int64("maxRequestSize", 10485760, "Max Request Size") 
 	return &config
 }
