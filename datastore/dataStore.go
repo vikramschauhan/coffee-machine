@@ -43,6 +43,6 @@ func (dataStore *DataStore) Ping() error {
 }
 
 func (dataStore *DataStore) Migrate() error {
-	err := dataStore.client.AutoMigrate(&Employee{}).Error
+	err := dataStore.client.AutoMigrate(&RawMaterial{}).Error
 	return err
 }
