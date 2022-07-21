@@ -75,7 +75,7 @@ func (s *Server) respondWithErrors(w http.ResponseWriter, statusCode int, err ..
 	if err != nil {
 		err := json.NewEncoder(w).Encode(err)
 		if err != nil {
-			s.logger.Log("err", errors.Errorf("Failed to Encode result to JSON:%v", err))
+			s.logger.Log("err", errors.Errorf("Failed to Encode result to the JSON:%v", err))
 		}
 	}
 }
